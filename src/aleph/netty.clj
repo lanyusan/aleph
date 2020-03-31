@@ -798,7 +798,8 @@
      #(str prefix "-" (swap! num-threads inc))
      (deliver (promise) nil)
      nil
-     daemon?)))
+     daemon?
+     )))
 
 (def ^String client-event-thread-pool-name "aleph-netty-client-event-pool")
 
